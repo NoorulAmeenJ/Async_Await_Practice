@@ -42,6 +42,7 @@ function pickup(product,callback){
     console.log(`you    picked up a  ${product} `)
     callback()
 }
+
 function number(engal,callback){
     console.log(`hiii  ${engal} product picked up successfully`)
     callback()
@@ -62,8 +63,7 @@ register("noorul",()=>{
                 delivery("delivered")
         })
     })
-})
-
+  })
 })
 
 
