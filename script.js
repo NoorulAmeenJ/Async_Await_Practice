@@ -91,38 +91,50 @@
 // fourth
 // second
 
-function first(callback){
-    console.log("first")
-   setTimeout( callback, 3000)
+// function first(callback){
+//     console.log("first")
+//    setTimeout( callback, 3000)
 
-}
-function second(callback){
-    console.log("second")
-    callback()
-}
-function third(callback){
-    console.log("third")
-   setTimeout( callback,5000)
-}
-function fourth(callback){
-    console.log("fourth")
-}
+// }
+// function second(callback){
+//     console.log("second")
+//     callback()
+// }
+// function third(callback){
+//     console.log("third")
+//    setTimeout( callback,5000)
+// }
+// function fourth(callback){
+//     console.log("fourth")
+// }
 
 
-first(()=>{
-       second(()=>{
-        third(()=>{
-           fourth()
-      })
-    })
-})
+// first(()=>{
+//        second(()=>{
+//         third(()=>{
+//            fourth()
+//       })
+//     })
+// })
 
 // first
 // second
 // third
 // fourth
 
+let taskCompletion = 60;
 
 
+// //producer of promise
+let promise = new Promise(
+    (noorul, ameen)=>{
 
-
+            if(taskCompletion >= 75){
+                noorul("correct")
+            } else {
+                ameen("wrong")
+            }    
+        
+    }
+)
+console.log(promise)
