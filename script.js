@@ -175,26 +175,56 @@ let taskCompletion = 600;
 //   console.log(e)
 // })
 // day- 3started
-var prom1 = new Promise((resolve, reject) =>{
-  console.log("1st")
-  resolve(10)
-  // reject(119)
-})
-var prom2 = new Promise((resolve, reject) =>{
-  consdole.log("2st")
-  resolve(10)
-  // reject(19)
-})
+// var prom1 = new Promise((resolve, reject) =>{
+//   console.log("1st")
+//   resolve(10)
+//   // reject(119)
+// })
+// var prom2 = new Promise((resolve, reject) =>{
+//   console.log("2st")
+//   resolve(10)
+//   // reject(19)
+// })
 
-var prom3 = new Promise((resolve, reject) =>{
-  console.log("3st")
-  // resolve(10)
-  reject(199)
+// var prom3 = new Promise((resolve, reject) =>{
+//   console.log("3st")
+//   // resolve(10)
+//   reject(199)
+// })
+// Promise.all([prom1, prom2, prom3])
+// .then(()=>{
+//   console.log("all done")
+// })
+// .catch((err)=>{
+//   console.log(err)
+// })
+// capital , latlag, flag , region , name, country codes
+// fetch started 
+// fetch("https://restcountries.com/v3.1/all")
+// .then((response)=>response.json())
+// .then((data)=>{})
+  // data.forEach((value,id)=>{
+  //  console.log( value.name.common,id)
+  //  data.map((value)=>{
+    // console.log( value.name.common)
+  // both is giving the sam eresult 
+  
+// })
+fetch("https://restcountries.com/v3.1/all")
+.then((response)=>response.json())
+.then((value)=>{ 
+console.log(value)
+  value.forEach((data)=>{
+    aakifah(data.flags.svg,data.population)
+  // console.log(`${data.flag} ${data.population} ${data.region} ${data.capital}`)
+  })
 })
-Promise.all([prom1, prom2, prom3])
-.then(()=>{
-  console.log("all done")
-})
-.catch((err)=>{
-  console.log(err)
-})
+.catch((err)=>console.log(err))
+var ameen = document.getElementById("ameen")
+
+function aakifah(name,na1) {
+     ameen.innerHTML += 
+   ` <div> ${name} ${na1} </div>  `
+  
+}
+
