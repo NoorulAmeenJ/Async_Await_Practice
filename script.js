@@ -148,29 +148,53 @@ let taskCompletion = 600;
 // // if u use then means , it won't show pending , 
 //   console.log("dappa")
 
-var keer = 50
-  var newpromise = new Promise((fulfill,reject)=>{
+// var keer = 50
+//   var newpromise = new Promise((fulfill,reject)=>{
     
-       fulfill(keer)
-        // reject(keer)
+//        fulfill(keer)
+//         // reject(keer)
     
  
-  })
+//   })
 
 
   // console.log(newpromise)
 
-newpromise.then((ka)=>{
-    console.log(ka)
-    return ka
+// newpromise.then((ka)=>{
+//     console.log(ka)
+//     return ka
+// })
+// .then((ku)=>{
+//     console.log(ku*2)
+//     return ku*2
+// })
+// .then((ke)=>{
+//     console.log(ke-12)
+//     return ke
+// }).catch((e)=>{
+//   console.log(e)
+// })
+// day- 3started
+var prom1 = new Promise((resolve, reject) =>{
+  console.log("1st")
+  resolve(10)
+  // reject(119)
 })
-.then((ku)=>{
-    console.log(ku*2)
-    return ku
+var prom2 = new Promise((resolve, reject) =>{
+  consdole.log("2st")
+  resolve(10)
+  // reject(19)
 })
-.then((ke)=>{
-    console.log(ke-12)
-    return ke
-}).catch((e)=>{
-  console.log(e)
+
+var prom3 = new Promise((resolve, reject) =>{
+  console.log("3st")
+  // resolve(10)
+  reject(199)
+})
+Promise.all([prom1, prom2, prom3])
+.then(()=>{
+  console.log("all done")
+})
+.catch((err)=>{
+  console.log(err)
 })
