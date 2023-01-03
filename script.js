@@ -122,26 +122,55 @@
 // third
 // fourth
 
-let taskCompletion = 60;
+let taskCompletion = 600;
 
 
-// //producer of promise
-let promise = new Promise(    (noorul, ameen)=>{
-        setTimeout( ()=>{
-            if(taskCompletion >= 75){
-                noorul("correct")
-            } else {
-                ameen("wrong")
+// // //producer of promise
+// let promise = new Promise(    (noorul, ameen)=>{
+//         setTimeout( ()=>{
+//             if(taskCompletion >= 75){
+//                 noorul("correct")
+//             } else {
+//                 ameen("wrong")
                 
-            }    
-        },1000)
-    })
- console.log(promise)
+//             }    
+//         },1000)
+//     })
+//  console.log(promise)
 
-//   setTimeout(()=>{ console.log(promise) },3000)
+// //   setTimeout(()=>{ console.log(promise) },3000)
 
-  promise.then(()=>{
-    console.log(promise)
-  }).catch((err)=>{
-    console.log("thappu thambi")
+//   promise.then(()=>{
+//     console.log(promise)
+//   }).catch((err)=>{
+//     console.log(err)
+//   })
+// // if u use then means , it won't show pending , 
+//   console.log("dappa")
+
+var keer = 50
+  var newpromise = new Promise((fulfill,reject)=>{
+    
+       fulfill(keer)
+        // reject(keer)
+    
+ 
   })
+
+
+  // console.log(newpromise)
+
+newpromise.then((ka)=>{
+    console.log(ka)
+    return ka
+})
+.then((ku)=>{
+    console.log(ku*2)
+    return ku
+})
+.then((ke)=>{
+    console.log(ke-12)
+    return ke
+}).catch((e)=>{
+  console.log(e)
+})
