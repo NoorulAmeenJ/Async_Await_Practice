@@ -126,15 +126,22 @@ let taskCompletion = 60;
 
 
 // //producer of promise
-let promise = new Promise(
-    (noorul, ameen)=>{
-
+let promise = new Promise(    (noorul, ameen)=>{
+        setTimeout( ()=>{
             if(taskCompletion >= 75){
                 noorul("correct")
             } else {
                 ameen("wrong")
+                
             }    
-        
-    }
-)
-console.log(promise)
+        },1000)
+    })
+ console.log(promise)
+
+//   setTimeout(()=>{ console.log(promise) },3000)
+
+  promise.then(()=>{
+    console.log(promise)
+  }).catch((err)=>{
+    console.log("thappu thambi")
+  })
