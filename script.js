@@ -257,11 +257,24 @@
 // }
 // main().catch((e)=>console.log(e))
 // main()
+// function FetchData() {
+// var nn = fetch("https://restcountries.com/v3.1/all")
+//     return nn
+// }
 
-var nn = fetch("https://restcountries.com/v3.1/all")
-
-    var ruban =   nn.json()
-    
-    console.log(ruban)
+ async function techData() {    
+ var aa= await fetch("https://restcountries.com/v3.1/all");
+ var ae= await  aa.json()
+ console.log(ae)
+ ae.forEach ((element)=>{
+          console.log( element.name.common)
+ })
+var destru = {
+  ...ae,
+  name: element.name.common,
+  flag: element.flag,
+}
+ 
+}
     // function noorul(fetch){}
-   
+   techData()
