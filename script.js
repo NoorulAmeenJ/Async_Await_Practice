@@ -122,7 +122,7 @@
 // third
 // fourth
 
-let taskCompletion = 600;
+// let taskCompletion = 600;
 
 
 // // //producer of promise
@@ -210,21 +210,58 @@ let taskCompletion = 600;
   // both is giving the sam eresult 
   
 // })
-fetch("https://restcountries.com/v3.1/all")
-.then((response)=>response.json())
-.then((value)=>{ 
-console.log(value)
-  value.forEach((data)=>{
-    aakifah(data.flags.svg,data.population)
-  // console.log(`${data.flag} ${data.population} ${data.region} ${data.capital}`)
-  })
-})
-.catch((err)=>console.log(err))
-var ameen = document.getElementById("ameen")
+// fetch("https://restcountries.com/v3.1/all")
+// .then((response)=>response.json())
+// .then((value)=>{ 
+// console.log(value)
+//   value.forEach((data)=>{
+//     aakifah(data.flags.svg,data.population)
+//   // console.log(`${data.flag} ${data.population} ${data.region} ${data.capital}`)
+//   })
+// })
+// .catch((err)=>console.log(err))
+// var ameen = document.getElementById("ameen")
 
-function aakifah(name,na1) {
-     ameen.innerHTML += 
-   ` <div> ${name} ${na1} </div>  `
+// function aakifah(name,na1) {
+//      ameen.innerHTML += 
+//    ` <div> ${name} ${na1} </div>  `
   
-}
+// }
 
+// ////////////////////////////day-4 started 
+// function one (){
+//   console.log("before promise one()")
+  
+//   return new Promise((resolve,reject) =>{
+//     setTimeout(()=>{
+//      resolve("first")
+//     },2000)
+ 
+//   })
+// }
+// function two (){
+//   console.log('two')
+// }
+// function three (){
+//   console.log('three')
+// }
+// function four(){
+//   console.log('four')
+// }
+// async function main(){
+//       let afirst = await one()
+//       console.log(afirst)
+//       two()
+//       three()
+//       four()
+// }
+// main().catch((e)=>console.log(e))
+// main()
+
+var nn = fetch("https://restcountries.com/v3.1/all")
+
+    var ruban =   nn.json()
+    
+    console.log(ruban)
+    // function noorul(fetch){}
+   
