@@ -262,19 +262,49 @@
 //     return nn
 // }
 
- async function techData() {    
- var aa= await fetch("https://restcountries.com/v3.1/all");
- var ae= await  aa.json()
- console.log(ae)
- ae.forEach ((element)=>{
-          console.log( element.name.common)
- })
-var destru = {
-  ...ae,
-  name: element.name.common,
-  flag: element.flag,
-}
+//  async function techData() {    
+//  var aa= await fetch("https://63b63e2458084a7af3acfd37.mockapi.io/students");
+//  var ae= await  aa.json()
+//  console.log(ae)}
+//  techData()
+//  ae.forEach ((element)=>{
+//           console.log( element.name.common)
+//  })
+// var destru = {
+//   ...ae,
+//   name: element.name.common,
+//   flag: element.flag,
+// }
  
-}
-    // function noorul(fetch){}
-   techData()
+// }
+//     // function noorul(fetch){}
+//    techData()
+
+// let API = "https://63b63e2458084a7af3acfd37.mockapi.io/students";
+// console.log(API);
+// function readalldata() {
+    
+//     //  var aa= await fetch("https://api-mobilespecs.azharimm.dev/latest");
+//     //  var ae= await  aa.json()
+//   fetch(API)
+//   .then((response) => console.log(response.json()))
+//   .then((data)=>{console.log(data)})
+
+
+// }
+// let API = "https://63b63e2458084a7af3acfd37.mockapi.io/noorul";
+          
+//   async function readalldata(){
+//   var fried = await fetch(API)
+//   var chicken = await fried.json()
+//         console.log(chicken)       
+// }
+// readalldata()
+
+//  async function techData() {    
+//  var aa= await fetch("https://63ae58eeceaabafcf177e256.mockapi.io/users");
+//  var ae= await  aa.json()
+//  console.log(ae)}
+//  techData()
+
+let
