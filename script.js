@@ -307,4 +307,36 @@
 //  console.log(ae)}
 //  techData()
 
-let
+ let API = "https://63b63e2458084a7af3acfd37.mockapi.io/noorul"
+ console.log(API)
+
+ function readalldata(){
+     fetch(API, {method: "GET"})
+     .then((response)=>response.json())
+     .then((data)=>(data))
+ }
+
+function createdata(){
+  let studentsdata= {
+    "name": "aakifah",
+    "place": "kaniyur1",
+  }
+   
+  fetch(API, {
+    method: "POST",
+    body: JSON.stringify(studentsdata),
+    headers: {
+      "Content-Type": "application/json; charset=UTF-8" ,
+    },
+  }
+  )
+  .then((response)=>(response.json))
+  .then((data)=>(data))
+  return data
+} 
+
+
+
+
+createdata();
+ readalldata();
