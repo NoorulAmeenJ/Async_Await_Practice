@@ -352,3 +352,13 @@
                     the id is ${id}`);
  })
  console.log("hellow")
+
+sssss
+
+ console.log(a)
+ console.log(b)
+ console.log(c)
+
+var a = 10 ;
+let b = 10 ;
+const c= 10;
