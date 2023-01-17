@@ -394,3 +394,5 @@ let arr = ["aa","bb","cc",5,"dd"]
 const [fi,se, ...dur] = arr
 console.log(fi,se,arr[2])
 console.log(dur)
+
+polyfile
