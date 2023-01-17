@@ -346,19 +346,46 @@
  
 
 
- var array = [5,6,8,9,10,11,12,13,14];
- array.map((item,id,wholearray)=> {
-     console.log(`the item is ${item}
-                    the id is ${id}`);
- })
- console.log("hellow")
+//  var array = [5,6,8,9,10,11,12,13,14];
+//  array.map((item,id,wholearray)=> {
+//      console.log(`the item is ${item}
+//                     the id is ${id}`);
+//  })
+//  console.log("hellow")
 
-sssss
 
- console.log(a)
- console.log(b)
- console.log(c)
+//  console.log(a)
+//  console.log(b)
+//  console.log(c)
 
-var a = 10 ;
-let b = 10 ;
-const c= 10;
+// var a = 10 ;
+// let b = 10 ;
+// const c= 10;
+
+// var  name = 5
+// function noorul(){
+//     let peyer = 10 ;
+//     console.log(name); 
+//     var diamond = 1000;
+// }
+// noorul()
+// console.log(diamond)
+
+var sanjay = ["noorul", "arafat", "aakifah", "faritha", "rehan"]
+sanjay.map((value)=>console.log(value))
+
+array destructing
+let object = {
+    name : "noorul",
+    company: "profinch"
+
+}
+const {name,company} = object 
+console.log(name);
+console.log(company);
+
+let arr = ["aa","bb","cc",5,"dd"]
+
+const [fi,se, ...dur] = arr
+console.log(fi,se,arr[2])
+console.log(dur)
