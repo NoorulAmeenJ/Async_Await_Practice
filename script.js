@@ -374,6 +374,8 @@
 var sanjay = ["noorul", "arafat", "aakifah", "faritha", "rehan"]
 sanjay.map((value)=>console.log(value))
 
+
+
 array destructing
 let object = {
     name : "noorul",
