@@ -395,7 +395,7 @@ var sanjay = ["noorul", "arafat", "aakifah", "faritha", "rehan"]
 // console.log(fi,se,arr[2])
 // console.log(dur)
 
-// polyfile
+// spread operator and rest operators
 var mumtaj = ["noorul", "rehan", "arafat", "aakifah", "faritha"]
 function loosu(naan,anni, ...s){
 console.log(naan)
