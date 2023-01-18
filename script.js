@@ -372,27 +372,35 @@
 // console.log(diamond)
 
 var sanjay = ["noorul", "arafat", "aakifah", "faritha", "rehan"]
-sanjay.map((value)=>console.log(value))
+// sanjay.map((value)=>console.log(value))
 
 
 
 
 
 
-array destructing
-let object = {
-    name : "noorul",
-    company: "profinch"
+// array destructing
+// let object = {
+//     name : "noorul",
+//     company: "profinch"
 
-}
-const {name,company} = object 
-console.log(name);
-console.log(company);
+// }
+// const {name,company} = object 
+// console.log(name);
+// console.log(company);
 
-let arr = ["aa","bb","cc",5,"dd"]
+// let arr = ["aa","bb","cc",5,"dd"]
 
-const [fi,se, ...dur] = arr
-console.log(fi,se,arr[2])
-console.log(dur)
+// const [fi,se, ...dur] = arr
+// console.log(fi,se,arr[2])
+// console.log(dur)
 
-polyfile
+// polyfile
+var mumtaj = ["noorul", "rehan", "arafat", "aakifah", "faritha"]
+function loosu(naan,anni, ...s){
+console.log(naan)
+console.log(...s)
+console.log(anni)
+};
+
+loosu(...mumtaj)
