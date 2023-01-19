@@ -403,4 +403,6 @@ console.log(...s)
 console.log(anni)
 };
 
+
+
 loosu(...mumtaj)
